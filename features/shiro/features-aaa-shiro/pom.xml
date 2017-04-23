@@ -20,6 +20,7 @@
 
     <properties>
         <servicemix.version>1.8.3_2</servicemix.version>
+        <dlux.version>0.5.0-SNAPSHOT</dlux.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -35,6 +36,16 @@
     </dependencyManagement>
 
     <dependencies>
+         <!-- this dependency is added to test integration with /restconf-->
+        <dependency>
+           <groupId>org.opendaylight.dlux</groupId>
+           <artifactId>features-dlux</artifactId>
+           <classifier>features</classifier>
+           <version>${dlux.version}</version>
+           <type>xml</type>
+           <scope>runtime</scope>
+        </dependency>
+        <!-- end -->
         <dependency>
             <groupId>org.opendaylight.aaa</groupId>
             <artifactId>features-aaa</artifactId>

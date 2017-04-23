@@ -8,6 +8,8 @@
           xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0">
 
     <repository>mvn:org.opendaylight.aaa/features-aaa/{{VERSION}}/xml/features</repository>
+    <!-- integration testing -->
+    <repository>mvn:org.opendaylight.dlux/features-dlux/${dlux.version}/xml/features</repository>
 
     <!-- odl-aaa-shiro feature which combines all aspects of AAA into one feature -->
     <feature name='odl-aaa-shiro' description='OpenDaylight :: AAA :: Shiro'
